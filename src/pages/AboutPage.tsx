@@ -5,10 +5,10 @@ export default function AboutPage() {
   return (
     <>
       <Section>
-        <SectionHeader title="About Rx Laundry" subtitle="Lagos' most trusted premium laundry service." />
+        <SectionHeader title="About Rx Laundry" subtitle="Eket's most trusted premium laundry service." />
         <div className="mx-auto max-w-3xl space-y-6 text-muted-foreground leading-relaxed">
           <p>
-            Founded in Lagos with a simple mission: to give busy professionals their time back. 
+            Founded in Eket with a simple mission: to give busy professionals their time back. 
             Rx Laundry combines expert garment care with the convenience of on-demand pickup and delivery, 
             so you never have to worry about laundry day again.
           </p>
@@ -49,7 +49,7 @@ export default function AboutPage() {
             { title: "Quality First", desc: "Every garment is inspected before and after cleaning. We don't cut corners." },
             { title: "Reliability", desc: "When we say 24 hours, we mean 24 hours. Your time matters to us." },
             { title: "Sustainability", desc: "Eco-friendly detergents, water-efficient machines, and recyclable packaging." },
-            { title: "Community", desc: "Proudly Lagos-born. We employ locally and invest in our community." },
+            { title: "Community", desc: "Proudly Eket-born. We employ locally and invest in our community." },
           ].map((v) => (
             <div key={v.title} className="rounded-xl border border-border bg-card p-6 shadow-card">
               <h3 className="mb-2 font-heading text-lg font-semibold text-foreground">{v.title}</h3>

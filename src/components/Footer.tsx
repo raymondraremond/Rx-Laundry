@@ -22,7 +22,7 @@ export default function Footer() {
                 <span className="font-heading text-xl font-bold">Rx Laundry</span>
               </div>
               <p className="text-sm text-secondary-foreground/60 leading-relaxed mb-5">
-                Fresh. Fast. Subscription-Ready. Premium laundry and dry-cleaning services across Lagos.
+                Fresh. Fast. Subscription-Ready. Premium laundry and dry-cleaning services across Eket.
               </p>
               {/* Social icons */}
               <div className="flex gap-3">
@@ -70,7 +70,7 @@ export default function Footer() {
                 {[
                   { icon: Phone, text: "+234 800 RX LAUNDRY" },
                   { icon: Mail, text: "hello@rxlaundry.ng" },
-                  { icon: MapPin, text: "Lekki Phase 1, Lagos" },
+                  { icon: MapPin, text: "Eket, Akwa Ibom" },
                 ].map((item) => (
                   <div key={item.text} className="flex items-center gap-3 group cursor-pointer">
                     <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-secondary-foreground/5 text-secondary-foreground/40 group-hover:bg-primary/20 group-hover:text-primary transition-all duration-300">

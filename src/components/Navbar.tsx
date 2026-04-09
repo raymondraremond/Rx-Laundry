@@ -62,7 +62,7 @@ export default function Navbar() {
               isTransparent ? "text-white" : "text-foreground"
             }`}
           >
-            Rx Laundry
+            Laundry
           </span>
         </Link>
 

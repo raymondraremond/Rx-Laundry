@@ -85,7 +85,8 @@
   }
 
   body {
-    @apply bg-background text-foreground font-body antialiased;
+    @apply bg-background text-foreground font-body antialiased overflow-x-hidden;
+    max-width: 100vw;
   }
 
   h1, h2, h3, h4 {

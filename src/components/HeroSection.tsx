@@ -56,7 +56,7 @@ export default function HeroSection() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-green-400" />
                 </span>
-                Lagos' Premium Laundry Service
+                Eket's Premium Laundry Service
               </span>
             </div>
 
@@ -66,7 +66,7 @@ export default function HeroSection() {
               }`}
             >
               Fresh. Fast.{" "}
-              <span className="hero-text-gradient">
+              <span className="hero-text-gradient break-words hyphens-auto inline-block max-w-full">
                 Subscription-Ready.
               </span>
             </h1>
@@ -77,7 +77,7 @@ export default function HeroSection() {
               }`}
             >
               Premium on-demand laundry & dry-cleaning with free pickup and
-              delivery across Lagos. Join hundreds of professionals who trust
+              delivery across Eket. Join hundreds of professionals who trust
               Rx&nbsp;Laundry.
             </p>
 
@@ -103,7 +103,7 @@ export default function HeroSection() {
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-white/25 text-white hover:bg-white/10 hover:border-white/40 text-base px-8 py-6 rounded-xl backdrop-blur-sm"
+                className="bg-transparent border-white/25 text-white hover:bg-white/10 hover:text-white hover:border-white/40 text-base px-8 py-6 rounded-xl backdrop-blur-sm"
               >
                 <Link to="/pricing">View Plans</Link>
               </Button>

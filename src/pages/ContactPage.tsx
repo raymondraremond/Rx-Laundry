@@ -47,7 +47,7 @@ export default function ContactPage() {
             {[
               { icon: Phone, label: "+234 800 RX LAUNDRY" },
               { icon: Mail, label: "hello@rxlaundry.ng" },
-              { icon: MapPin, label: "15 Admiralty Way, Lekki Phase 1, Lagos" },
+              { icon: MapPin, label: "Eket, Akwa Ibom" },
             ].map((item) => (
               <div key={item.label} className="flex items-center gap-3">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">

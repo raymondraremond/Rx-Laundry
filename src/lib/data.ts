@@ -39,7 +39,7 @@ export const services = [
   {
     icon: "Truck",
     title: "Pickup & Delivery",
-    description: "Free pickup and delivery across Lagos. Schedule at your convenience.",
+    description: "Free pickup and delivery across Eket. Schedule at your convenience.",
     price: "Free",
     unit: "with subscription",
   },
@@ -120,7 +120,7 @@ export const testimonials = [
   {
     name: "Funke Adeola",
     role: "Fashion Designer",
-    content: "I trust Rx Laundry with my delicate fabrics and designer pieces. They understand quality garment care like no other in Lagos.",
+    content: "I trust Rx Laundry with my delicate fabrics and designer pieces. They understand quality garment care like no other in Eket.",
     rating: 5,
   },
 ];
@@ -131,8 +131,8 @@ export const faqs = [
     answer: "Simply schedule a pickup through our booking form or WhatsApp. Our rider will come to your location, collect your laundry, and deliver it back clean and fresh within the agreed timeframe.",
   },
   {
-    question: "What areas in Lagos do you cover?",
-    answer: "We currently serve Lekki, Victoria Island, Ikoyi, Ajah, Surulere, Yaba, Ikeja, and surrounding areas. We're expanding to more locations soon!",
+    question: "What areas in Eket do you cover?",
+    answer: "We currently serve all major areas in Eket and surrounding areas. We're expanding to more locations soon!",
   },
   {
     question: "How long does it take to get my clothes back?",
@@ -177,14 +177,14 @@ At Rx Laundry, we have dedicated specialists for traditional fabrics who underst
   },
   {
     slug: "why-subscription-laundry-saves-time",
-    title: "Why Subscription Laundry is the Smartest Move for Lagos Professionals",
-    excerpt: "Lagos traffic is stressful enough. Here's why letting professionals handle your laundry is the productivity hack you need.",
+    title: "Why Subscription Laundry is the Smartest Move for Eket Professionals",
+    excerpt: "Traffic is stressful enough. Here's why letting professionals handle your laundry is the productivity hack you need.",
     date: "March 8, 2024",
     readTime: "4 min read",
-    content: `If you live and work in Lagos, you know that time is your most valuable resource. Between navigating traffic, managing deadlines, and maintaining relationships, something has to give. For most professionals, that something is laundry.
+    content: `If you live and work in Eket, you know that time is your most valuable resource. Between navigating traffic, managing deadlines, and maintaining relationships, something has to give. For most professionals, that something is laundry.
 
 **The math is simple:**
-The average Lagos professional spends 4-6 hours per week on laundry. That's over 250 hours a year — more than 10 full days!
+The average Eket professional spends 4-6 hours per week on laundry. That's over 250 hours a year — more than 10 full days!
 
 **What subscription laundry offers:**
 - Predictable monthly costs (no surprise expenses)
@@ -195,7 +195,7 @@ The average Lagos professional spends 4-6 hours per week on laundry. That's over
 **The Rx Laundry advantage:**
 Our subscription plans start at just ₦12,500/month. That's less than what most people spend eating out twice. But the time you get back? Priceless.
 
-Join hundreds of Lagos professionals who've already made the switch. Your future self will thank you.`,
+Join hundreds of Eket professionals who've already made the switch. Your future self will thank you.`,
   },
   {
     slug: "stain-removal-guide",
@@ -239,14 +239,21 @@ export const galleryImages = [
   { src: "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=600&h=400&fit=crop", alt: "Modern laundry facility" },
   { src: "https://images.unsplash.com/photo-1469504512102-900f29606341?w=600&h=400&fit=crop", alt: "Stain treatment process" },
   { src: "https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?w=600&h=400&fit=crop", alt: "Dry cleaning rack" },
+  { src: "https://images.unsplash.com/photo-1521556942006-2580a8274d75?w=600&h=400&fit=crop", alt: "Special care for wedding gowns & suits" },
+  { src: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=600&h=400&fit=crop", alt: "Sneaker cleaning and restoration" },
+  { src: "https://images.unsplash.com/photo-1583847268964-b28ce8f25e63?w=600&h=400&fit=crop", alt: "Suits passing strict quality checks" },
+  { src: "https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?w=600&h=400&fit=crop", alt: "High-tech washing machines in action" },
+  { src: "https://images.unsplash.com/photo-1509819875429-cdab9a081da2?w=600&h=400&fit=crop", alt: "Our dedicated Rx team at work" },
+  { src: "https://images.unsplash.com/photo-1605652599602-5e4baabc52b6?w=600&h=400&fit=crop", alt: "Happy customer receiving fresh laundry delivery" },
+  { src: "https://images.unsplash.com/photo-1565513813957-c812c3f87c53?w=600&h=400&fit=crop", alt: "Before and after pristine shirts" }
 ];
 
 export const chatbotResponses: Record<string, string> = {
   pricing: "Our plans start at ₦12,500/month for Basic, ₦25,000/month for Premium, and ₦45,000/month for Executive. Visit our pricing page for details!",
-  pickup: "We offer free pickup and delivery across Lagos! Simply book through our website or WhatsApp us at +234 800 RX LAUNDRY.",
+  pickup: "We offer free pickup and delivery across Eket! Simply book through our website or WhatsApp us at +234 916 188 6063.",
   hours: "We're open Monday to Saturday, 7 AM – 8 PM. Sunday pickups available by appointment.",
   turnaround: "Standard turnaround is 48 hours. Premium subscribers get 24-hour, and Executive subscribers get same-day service!",
-  location: "We serve Lekki, Victoria Island, Ikoyi, Ajah, Surulere, Yaba, Ikeja, and more. We're expanding weekly!",
+  location: "We serve all major areas in Eket and surrounding areas. We're expanding weekly!",
   stain: "We specialize in tough stain removal! Our experts handle oil, wine, ink, and more. Bring it to us or schedule a pickup.",
   subscription: "We offer Monthly and Quarterly subscriptions. Quarterly saves you 10%! You can pause or cancel anytime.",
   default: "Thanks for reaching out! For specific questions, please WhatsApp us or visit our contact page. We're happy to help!",

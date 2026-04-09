@@ -21,7 +21,7 @@ export default function HomePage() {
 
       {/* Trust Badges */}
       <Section className="py-10 md:py-14 border-b border-border/30">
-        <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
+        <div className="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4">
           {trustBadges.map((b, i) => {
             const Icon = trustIconMap[b.icon] || Shield;
             return (

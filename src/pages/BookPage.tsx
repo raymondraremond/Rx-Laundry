@@ -28,10 +28,9 @@ export default function BookPage() {
   });
 
   const onSubmit = async (data: BookingData) => {
-    // Mock API call
-    await new Promise((r) => setTimeout(r, 1000));
-    console.log("Booking submitted:", data);
-    toast.success("Booking confirmed! We'll contact you shortly.");
+    const msg = `New Booking Request!\n\nName: ${data.name}\nPhone: ${data.phone}\nAddress: ${data.address}\nService: ${data.service}\nDate: ${data.date}\nNotes: ${data.notes || 'None'}`;
+    const url = `https://wa.me/2349161886063?text=${encodeURIComponent(msg)}`;
+    window.open(url, '_blank');
     setSubmitted(true);
   };
 
