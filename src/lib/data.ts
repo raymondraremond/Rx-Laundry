@@ -231,21 +231,30 @@ Join hundreds of Eket professionals who've already made the switch. Your future 
 ];
 
 export const galleryImages = [
-  { src: "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?w=600&h=400&fit=crop", alt: "Freshly pressed shirts" },
-  { src: "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?w=600&h=400&fit=crop", alt: "Professional ironing" },
-  { src: "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=600&h=400&fit=crop", alt: "Clean folded towels" },
-  { src: "https://images.unsplash.com/photo-1489274495757-95c7c837b101?w=600&h=400&fit=crop", alt: "Laundry delivery service" },
-  { src: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=400&fit=crop", alt: "Premium garment care" },
-  { src: "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=600&h=400&fit=crop", alt: "Modern laundry facility" },
-  { src: "https://images.unsplash.com/photo-1469504512102-900f29606341?w=600&h=400&fit=crop", alt: "Stain treatment process" },
-  { src: "https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?w=600&h=400&fit=crop", alt: "Dry cleaning rack" },
-  { src: "https://images.unsplash.com/photo-1521556942006-2580a8274d75?w=600&h=400&fit=crop", alt: "Special care for wedding gowns & suits" },
-  { src: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=600&h=400&fit=crop", alt: "Sneaker cleaning and restoration" },
-  { src: "https://images.unsplash.com/photo-1583847268964-b28ce8f25e63?w=600&h=400&fit=crop", alt: "Suits passing strict quality checks" },
-  { src: "https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?w=600&h=400&fit=crop", alt: "High-tech washing machines in action" },
-  { src: "https://images.unsplash.com/photo-1509819875429-cdab9a081da2?w=600&h=400&fit=crop", alt: "Our dedicated Rx team at work" },
-  { src: "https://images.unsplash.com/photo-1605652599602-5e4baabc52b6?w=600&h=400&fit=crop", alt: "Happy customer receiving fresh laundry delivery" },
-  { src: "https://images.unsplash.com/photo-1565513813957-c812c3f87c53?w=600&h=400&fit=crop", alt: "Before and after pristine shirts" }
+  { src: "https://images.unsplash.com/photo-1583847268964-b28ce8f25e63?w=600&h=400&fit=crop&auto=format&q=80", alt: "Premium suit care and dry cleaning" },
+  { src: "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?w=600&h=400&fit=crop&auto=format&q=80", alt: "Freshly pressed shirts on racks" },
+  { src: "https://images.unsplash.com/photo-1521556942006-2580a8274d75?w=600&h=400&fit=crop&auto=format&q=80", alt: "Delicate wedding gown and dress care" },
+  { src: "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?w=600&h=400&fit=crop&auto=format&q=80", alt: "Professional steam ironing" },
+  { src: "https://images.unsplash.com/photo-1489274495757-95c7c837b101?w=600&h=400&fit=crop&auto=format&q=80", alt: "Prompt laundry pickup and delivery" },
+  { src: "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?w=600&h=400&fit=crop&auto=format&q=80", alt: "Neatly folded clean clothes" },
+  { src: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=400&fit=crop&auto=format&q=80", alt: "Stacks of pristine folded shirts" },
+  { src: "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?w=600&h=400&fit=crop&auto=format&q=80", alt: "Modern commercial washing machines" },
+  { src: "https://images.unsplash.com/photo-1469504512102-900f29606341?w=600&h=400&fit=crop&auto=format&q=80", alt: "Expert stain treatment process" },
+  { src: "https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?w=600&h=400&fit=crop&auto=format&q=80", alt: "Organized dry cleaning rack" },
+  { src: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=600&h=400&fit=crop&auto=format&q=80", alt: "Sneaker cleaning and restoration" },
+  { src: "https://images.unsplash.com/photo-1509819875429-cdab9a081da2?w=600&h=400&fit=crop&auto=format&q=80", alt: "Our dedicated laundry care team" },
+  { src: "https://images.unsplash.com/photo-1626806819282-2c1dc01a5e0c?w=600&h=400&fit=crop&auto=format&q=80", alt: "High-tech washing machines in action" },
+  { src: "https://images.unsplash.com/photo-1605652599602-5e4baabc52b6?w=600&h=400&fit=crop&auto=format&q=80", alt: "Happy customer receiving delivery" },
+  { src: "https://images.unsplash.com/photo-1565513813957-c812c3f87c53?w=600&h=400&fit=crop&auto=format&q=80", alt: "Crisp and pristine folded shirts" },
+  { src: "https://images.unsplash.com/photo-1581599129568-d33a1e94cbd1?w=600&h=400&fit=crop&auto=format&q=80", alt: "Specialized suit and tie care" },
+  { src: "https://images.unsplash.com/photo-1578328819058-b69f3a388fcc?w=600&h=400&fit=crop&auto=format&q=80", alt: "Freshly cleaned hanging clothes" },
+  { src: "https://images.unsplash.com/photo-1605908502724-906dd240dd2c?w=600&h=400&fit=crop&auto=format&q=80", alt: "Soft and sanitized folded white towels" },
+  { src: "https://images.unsplash.com/photo-1585420227280-99c55b1f3c3a?w=600&h=400&fit=crop&auto=format&q=80", alt: "Active washing and gentle fabric care" },
+  { src: "https://images.unsplash.com/photo-1505342813589-913aeb1a6f87?w=600&h=400&fit=crop&auto=format&q=80", alt: "Door-to-door laundry delivery" },
+  { src: "https://images.unsplash.com/photo-1512436991641-b67fcd7c7451?w=600&h=400&fit=crop&auto=format&q=80", alt: "Advanced eco-friendly washing" },
+  { src: "https://images.unsplash.com/photo-1602142273188-756184518776?w=600&h=400&fit=crop&auto=format&q=80", alt: "Special event and dress preservation" },
+  { src: "https://images.unsplash.com/photo-1520006403990-2c7003ab7210?w=600&h=400&fit=crop&auto=format&q=80", alt: "Close-up of clean premium fabric" },
+  { src: "https://images.unsplash.com/photo-1591047139829-d9d15024220b?w=600&h=400&fit=crop&auto=format&q=80", alt: "Spotless cleaned sports sneakers" }
 ];
 
 export const chatbotResponses: Record<string, string> = {

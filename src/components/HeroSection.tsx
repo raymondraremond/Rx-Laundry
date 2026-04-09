@@ -13,7 +13,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="hero-section relative min-h-[100vh] flex items-center overflow-hidden">
+    <section className="hero-section relative min-h-[100vh] flex items-center overflow-hidden pt-32 pb-20 lg:py-0">
       {/* Animated gradient background */}
       <div className="absolute inset-0 hero-gradient-bg" />
 
@@ -141,7 +141,7 @@ export default function HeroSection() {
 
           {/* Visual side - Premium card */}
           <div
-            className={`hidden lg:block transition-all duration-1000 delay-300 ease-out ${
+            className={`w-full mt-10 lg:mt-0 transition-all duration-1000 delay-300 ease-out ${
               loaded ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-12 scale-95"
             }`}
           >
@@ -159,7 +159,7 @@ export default function HeroSection() {
                     muted
                     loop
                     playsInline
-                    poster="https://images.unsplash.com/photo-1545173168-9f1947eebb7f?w=800&h=600&fit=crop"
+                    poster="https://images.unsplash.com/photo-1545173168-9f1947eebb7f?w=800&h=600&fit=crop&auto=format&q=80"
                   >
                     <source
                       src="https://videos.pexels.com/video-files/5585783/5585783-sd_640_360_30fps.mp4"
