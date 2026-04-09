@@ -111,3 +111,455 @@
     box-shadow: var(--shadow-elevated);
   }
 }
+
+/* ======================================
+   HERO SECTION ANIMATIONS
+   ====================================== */
+
+.hero-section {
+  background: hsl(var(--secondary));
+}
+
+.hero-gradient-bg {
+  background:
+    radial-gradient(ellipse 80% 50% at 20% 40%, hsl(160 84% 39% / 0.15), transparent),
+    radial-gradient(ellipse 60% 40% at 80% 60%, hsl(25 95% 53% / 0.08), transparent),
+    radial-gradient(ellipse 100% 80% at 50% 100%, hsl(160 84% 39% / 0.05), transparent),
+    linear-gradient(135deg, hsl(210 18% 14%), hsl(210 22% 10%));
+  animation: heroGradientShift 12s ease-in-out infinite alternate;
+}
+
+@keyframes heroGradientShift {
+  0% { opacity: 1; }
+  50% { opacity: 0.85; }
+  100% { opacity: 1; }
+}
+
+/* Floating organic shapes */
+.hero-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+}
+.hero-shape-1 {
+  width: 400px;
+  height: 400px;
+  background: hsl(160 84% 39% / 0.15);
+  top: -100px;
+  right: -100px;
+  animation: heroFloat 20s ease-in-out infinite;
+}
+.hero-shape-2 {
+  width: 300px;
+  height: 300px;
+  background: hsl(25 95% 53% / 0.1);
+  bottom: -50px;
+  left: -80px;
+  animation: heroFloat 16s ease-in-out infinite reverse;
+}
+.hero-shape-3 {
+  width: 200px;
+  height: 200px;
+  background: hsl(160 84% 50% / 0.1);
+  top: 40%;
+  left: 50%;
+  animation: heroFloat 14s ease-in-out infinite 3s;
+}
+
+@keyframes heroFloat {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(30px, -20px) scale(1.05); }
+  50% { transform: translate(-20px, 20px) scale(0.95); }
+  75% { transform: translate(15px, 10px) scale(1.02); }
+}
+
+/* Water ripple accents */
+.hero-ripple {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid hsl(160 84% 39% / 0.1);
+  animation: heroRipple 8s ease-out infinite;
+}
+.hero-ripple-1 {
+  width: 300px;
+  height: 300px;
+  bottom: 10%;
+  right: 20%;
+}
+.hero-ripple-2 {
+  width: 200px;
+  height: 200px;
+  top: 20%;
+  left: 10%;
+  animation-delay: 4s;
+}
+
+@keyframes heroRipple {
+  0% { transform: scale(0.8); opacity: 0.5; }
+  50% { transform: scale(1.4); opacity: 0.1; }
+  100% { transform: scale(0.8); opacity: 0.5; }
+}
+
+/* Sparkle particles */
+.hero-sparkle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: hsl(160 84% 60%);
+  border-radius: 50%;
+  animation: sparkle 3s ease-in-out infinite;
+  box-shadow: 0 0 6px hsl(160 84% 39% / 0.5);
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0) translateY(0); }
+  50% { opacity: 1; transform: scale(1) translateY(-20px); }
+}
+
+/* Hero text gradient */
+.hero-text-gradient {
+  background: linear-gradient(135deg, hsl(160 84% 50%), hsl(160 84% 70%), hsl(25 95% 60%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-size: 200% 200%;
+  animation: textShimmer 6s ease-in-out infinite;
+}
+
+@keyframes textShimmer {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Floating cards animation */
+.hero-float-card {
+  animation: floatCard 6s ease-in-out infinite;
+}
+.hero-float-card-delayed {
+  animation: floatCard 6s ease-in-out infinite 2s;
+}
+
+@keyframes floatCard {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Progress dots */
+.progress-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+/* ======================================
+   NAVBAR ANIMATIONS
+   ====================================== */
+
+.nav-scrolled {
+  @apply shadow-lg;
+  backdrop-filter: blur(20px) saturate(1.8);
+  -webkit-backdrop-filter: blur(20px) saturate(1.8);
+}
+
+.nav-link-active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 2px;
+  background: hsl(var(--primary));
+  border-radius: 1px;
+  animation: navDotIn 0.3s ease-out forwards;
+}
+
+@keyframes navDotIn {
+  from { width: 0; opacity: 0; }
+  to { width: 20px; opacity: 1; }
+}
+
+/* Mobile menu animation */
+.mobile-menu-enter {
+  animation: mobileMenuIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes mobileMenuIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ======================================
+   CARD INTERACTIONS
+   ====================================== */
+
+.card-premium {
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-premium::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, transparent 40%, hsl(160 84% 39% / 0.3), transparent 60%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.card-premium:hover::before {
+  opacity: 1;
+}
+
+.card-premium:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px -12px hsl(160 84% 39% / 0.15), 0 8px 24px -8px hsl(0 0% 0% / 0.1);
+}
+
+/* Glow effect on hover */
+.card-glow:hover {
+  box-shadow:
+    0 0 0 1px hsl(160 84% 39% / 0.1),
+    0 8px 40px -8px hsl(160 84% 39% / 0.15),
+    0 20px 60px -12px hsl(0 0% 0% / 0.1);
+}
+
+/* ======================================
+   WHATSAPP BUTTON
+   ====================================== */
+
+.whatsapp-btn {
+  animation: whatsappPulse 3s ease-in-out infinite;
+}
+
+.whatsapp-btn::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: hsl(142 70% 45% / 0.3);
+  animation: whatsappRing 3s ease-in-out infinite;
+}
+
+@keyframes whatsappPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes whatsappRing {
+  0%, 100% { transform: scale(1); opacity: 0.3; }
+  50% { transform: scale(1.3); opacity: 0; }
+}
+
+/* ======================================
+   CHATBOT WIDGET
+   ====================================== */
+
+.chatbot-panel-enter {
+  animation: chatbotSlideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes chatbotSlideUp {
+  from { opacity: 0; transform: translateY(20px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.chatbot-toggle {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.chatbot-toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 30px -4px hsl(var(--primary) / 0.4);
+}
+
+/* ======================================
+   TESTIMONIAL CAROUSEL
+   ====================================== */
+
+.testimonial-enter {
+  animation: testimonialFade 0.5s ease-out forwards;
+}
+
+@keyframes testimonialFade {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.quote-mark {
+  animation: quoteBounce 4s ease-in-out infinite;
+}
+
+@keyframes quoteBounce {
+  0%, 100% { transform: translateY(0) rotate(-5deg); }
+  50% { transform: translateY(-4px) rotate(0deg); }
+}
+
+/* ======================================
+   GALLERY
+   ====================================== */
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: var(--radius);
+}
+
+.gallery-item img {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+.gallery-overlay {
+  transition: all 0.4s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+/* ======================================
+   FORM POLISH
+   ====================================== */
+
+.form-input-premium {
+  transition: all 0.3s ease;
+  border: 1px solid hsl(var(--border));
+}
+
+.form-input-premium:focus {
+  border-color: hsl(var(--primary));
+  box-shadow: 0 0 0 3px hsl(var(--primary) / 0.1);
+}
+
+/* ======================================
+   FOOTER
+   ====================================== */
+
+.footer-link {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.footer-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: hsl(var(--primary));
+  transition: width 0.3s ease;
+}
+
+.footer-link:hover::after {
+  width: 100%;
+}
+
+.footer-link:hover {
+  color: hsl(var(--primary));
+}
+
+/* Social icon hover */
+.social-icon {
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-2px);
+  color: hsl(var(--primary));
+}
+
+/* ======================================
+   PRICING TOGGLE
+   ====================================== */
+
+.pricing-toggle-container {
+  position: relative;
+  background: hsl(var(--muted));
+  border-radius: 12px;
+  padding: 4px;
+}
+
+.pricing-toggle-indicator {
+  position: absolute;
+  top: 4px;
+  height: calc(100% - 8px);
+  border-radius: 8px;
+  background: hsl(var(--primary));
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 8px hsl(var(--primary) / 0.3);
+}
+
+/* Price change animation */
+.price-animate {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ======================================
+   SECTION DIVIDER
+   ====================================== */
+
+.section-divider {
+  position: relative;
+  overflow: hidden;
+}
+
+.section-divider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, hsl(var(--primary)), transparent);
+  border-radius: 2px;
+}
+
+/* ======================================
+   REDUCED MOTION
+   ====================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .hero-shape,
+  .hero-ripple,
+  .hero-sparkle,
+  .hero-float-card,
+  .hero-float-card-delayed,
+  .whatsapp-btn::before {
+    animation: none !important;
+  }
+}
+
+/* ======================================
+   SMOOTH SCROLL
+   ====================================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
